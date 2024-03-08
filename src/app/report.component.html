@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <ng-container *ngFor="let page of pages; let i = index">
+    <div [ngClass]="'page' + (i + 1)">
+      <div style="width: 842px">
+        <h1>{{ "Page " + page }}</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio
+          aliquam, sit libero suscipit tenetur voluptatem possimus dolorem dicta
+          a optio laudantium aperiam quo ex voluptates porro? Repellat, nobis
+          expedita!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio
+          aliquam, sit libero suscipit tenetur voluptatem possimus dolorem dicta
+          a optio laudantium aperiam quo ex voluptates porro? Repellat, nobis
+          expedita!
+        </p>
+      </div>
+      <div
+        style="width: 842px; margin-bottom: 16px"
+        *ngFor="
+          let item of [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+            20, 21, 22, 23, 24
+          ]
+        "
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio
+          aliquam, sit libero suscipit tenetur voluptatem possimus dolorem dicta
+          a optio laudantium aperiam quo ex voluptates porro? Repellat, nobis
+          expedita!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio
+          aliquam, sit libero suscipit tenetur voluptatem possimus dolorem dicta
+          a optio laudantium aperiam quo ex voluptates porro? Repellat, nobis
+          expedita!
+        </p>
+      </div>
+    </div>
+    <div class="page-break"></div>
+  </ng-container>
+</div>
